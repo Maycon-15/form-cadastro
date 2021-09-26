@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form > *{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form>
+        <label for="Nome">Nome completo:</label>
+        <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome completo">
+
+        <label for="e-mail">E-mail</label>
+        <input type="email" id="e-mail" name="e-mail" placeholder="Digite seu e-mail">
+
+        <label for="tel">Telefone (opicional)</label>
+        <input type="" id="tel" name="tel">
+
+        <h3>Endereço</h3>
+
+        <label for="logradouro">Logradouro</label>
+        <input type="text" name="logradouro" id="logradouro">
+
+        <label for="numero">Número</label>
+        <input type="number" name="numero" id="numero">
+
+        <label for="bairro">Bairro (opicional)</label>
+        <input type="text" name="bairro" id="bairro">
+
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade">
+
+        <label for="estado">Estado</label>
+        <input type="text" name="estado" id="estado">
+
+        <label for="cep">CEP</label>
+        <input type="number" name="cep" id="cep">
+
+        <label for="civil">Estado civil</label>
+        <select name="civil" id="civil">
+            <option value="0">-Escolha uma das opções-</option>
+            <option value="1">Solteiro(a)</option>
+            <option value="2">Casado(a)</option>
+            <option value="3">Divorciado(a)</option>
+            <option value="4">Viúvo(a)</option>
+            <option value="5">Separado(a)</option>
+        </select>
+
+        <fieldset>
+
+        <legend>Preferência de contato</legend>
+
+        <input type="radio" id="E-mail" name="contato">
+        <label for="">E-mail</label>
+        <input type="radio" id="Telefone" name="contato">
+        <label for="">Telefone</label>
+        </fieldset>
+
+        <div>
+            <input type="checkbox" name="concordo" id="concordo">
+            <label for="concordo">Li e concordo</label>
+        </div>
+        
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reiniciar</button>
+        </div>
+    </form>
+</body>
+</html>
